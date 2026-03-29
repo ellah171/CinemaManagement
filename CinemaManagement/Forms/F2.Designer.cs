@@ -179,10 +179,12 @@
             guna2Button41 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button42 = new Guna.UI2.WinForms.Guna2Button();
             Search = new Guna.UI2.WinForms.Guna2Button();
+            panel1 = new Panel();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             guna2Panel7.SuspendLayout();
             Keyboard.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // guna2Panel1
@@ -190,7 +192,6 @@
             guna2Panel1.BackColor = Color.Black;
             guna2Panel1.BorderColor = Color.White;
             guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            guna2Panel1.BorderThickness = 1;
             guna2Panel1.Controls.Add(guna2HtmlLabel1);
             guna2Panel1.Controls.Add(guna2PictureBox1);
             guna2Panel1.CustomizableEdges = customizableEdges3;
@@ -199,7 +200,7 @@
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Panel1.Size = new Size(1918, 99);
+            guna2Panel1.Size = new Size(1078, 99);
             guna2Panel1.TabIndex = 9;
             guna2Panel1.Paint += guna2Panel1_Paint;
             // 
@@ -235,10 +236,10 @@
             guna2Panel7.Controls.Add(guna2Button2);
             guna2Panel7.CustomizableEdges = customizableEdges13;
             guna2Panel7.Dock = DockStyle.Bottom;
-            guna2Panel7.Location = new Point(0, 933);
+            guna2Panel7.Location = new Point(0, 1003);
             guna2Panel7.Name = "guna2Panel7";
             guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel7.Size = new Size(1918, 97);
+            guna2Panel7.Size = new Size(1078, 97);
             guna2Panel7.TabIndex = 20;
             // 
             // guna2Button3
@@ -254,7 +255,7 @@
             guna2Button3.FillColor = Color.FromArgb(200, 30, 30);
             guna2Button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(1341, 6);
+            guna2Button3.Location = new Point(619, 6);
             guna2Button3.Margin = new Padding(10);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -276,7 +277,7 @@
             guna2Button51.FillColor = Color.FromArgb(200, 30, 30);
             guna2Button51.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button51.ForeColor = Color.White;
-            guna2Button51.Location = new Point(3074, 4);
+            guna2Button51.Location = new Point(2234, 4);
             guna2Button51.Margin = new Padding(10);
             guna2Button51.Name = "guna2Button51";
             guna2Button51.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -297,7 +298,7 @@
             guna2Button1.FillColor = Color.FromArgb(200, 30, 30);
             guna2Button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(4822, 4);
+            guna2Button1.Location = new Point(3982, 4);
             guna2Button1.Margin = new Padding(10);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -331,10 +332,13 @@
             // 
             Mcon.AutoScroll = true;
             Mcon.BackColor = Color.FromArgb(25, 25, 25);
-            Mcon.Location = new Point(31, 177);
+            Mcon.Dock = DockStyle.Fill;
+            Mcon.FlowDirection = FlowDirection.BottomUp;
+            Mcon.Location = new Point(0, 99);
             Mcon.Name = "Mcon";
-            Mcon.Size = new Size(1750, 682);
+            Mcon.Size = new Size(1078, 904);
             Mcon.TabIndex = 21;
+            Mcon.WrapContents = false;
             Mcon.Paint += Mcon_Paint;
             // 
             // Keyboard
@@ -376,15 +380,16 @@
             Keyboard.Controls.Add(guna2Button4);
             Keyboard.CustomizableEdges = customizableEdges83;
             Keyboard.Dock = DockStyle.Bottom;
-            Keyboard.Location = new Point(0, 578);
+            Keyboard.Location = new Point(0, 648);
             Keyboard.Name = "Keyboard";
             Keyboard.ShadowDecoration.CustomizableEdges = customizableEdges84;
-            Keyboard.Size = new Size(1918, 355);
+            Keyboard.Size = new Size(1078, 355);
             Keyboard.TabIndex = 22;
             Keyboard.Visible = false;
             // 
             // guna2Button37
             // 
+            guna2Button37.Anchor = AnchorStyles.Bottom;
             guna2Button37.BorderRadius = 8;
             guna2Button37.CustomizableEdges = customizableEdges15;
             guna2Button37.DisabledState.BorderColor = Color.DarkGray;
@@ -392,18 +397,19 @@
             guna2Button37.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button37.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button37.FillColor = Color.FromArgb(64, 64, 64);
-            guna2Button37.Font = new Font("Segoe UI Semibold", 24.75F, FontStyle.Bold);
+            guna2Button37.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button37.ForeColor = Color.White;
-            guna2Button37.Location = new Point(393, 274);
+            guna2Button37.Location = new Point(335, 262);
             guna2Button37.Name = "guna2Button37";
             guna2Button37.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button37.Size = new Size(966, 71);
+            guna2Button37.Size = new Size(407, 71);
             guna2Button37.TabIndex = 33;
             guna2Button37.Text = "Space";
             guna2Button37.Click += guna2Button37_Click;
             // 
             // guna2Button36
             // 
+            guna2Button36.Anchor = AnchorStyles.Bottom;
             guna2Button36.BorderRadius = 8;
             guna2Button36.CustomizableEdges = customizableEdges17;
             guna2Button36.DisabledState.BorderColor = Color.DarkGray;
@@ -411,18 +417,19 @@
             guna2Button36.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button36.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button36.FillColor = Color.FromArgb(64, 64, 64);
-            guna2Button36.Font = new Font("Segoe UI Semibold", 24.75F, FontStyle.Bold);
+            guna2Button36.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button36.ForeColor = Color.White;
-            guna2Button36.Location = new Point(1472, 190);
+            guna2Button36.Location = new Point(908, 185);
             guna2Button36.Name = "guna2Button36";
             guna2Button36.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button36.Size = new Size(156, 71);
+            guna2Button36.Size = new Size(76, 71);
             guna2Button36.TabIndex = 32;
             guna2Button36.Text = "Clear";
             guna2Button36.Click += guna2Button36_Click;
             // 
             // btnEnter
             // 
+            btnEnter.Anchor = AnchorStyles.Bottom;
             btnEnter.BorderRadius = 8;
             btnEnter.CustomizableEdges = customizableEdges19;
             btnEnter.DisabledState.BorderColor = Color.DarkGray;
@@ -430,18 +437,19 @@
             btnEnter.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEnter.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEnter.FillColor = Color.FromArgb(64, 64, 64);
-            btnEnter.Font = new Font("Segoe UI Semibold", 24.75F, FontStyle.Bold);
+            btnEnter.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(1416, 104);
+            btnEnter.Location = new Point(873, 108);
             btnEnter.Name = "btnEnter";
             btnEnter.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnEnter.Size = new Size(268, 71);
+            btnEnter.Size = new Size(136, 71);
             btnEnter.TabIndex = 31;
             btnEnter.Text = "Enter";
             btnEnter.Click += guna2Button3_Click;
             // 
             // guna2Button34
             // 
+            guna2Button34.Anchor = AnchorStyles.Bottom;
             guna2Button34.BorderRadius = 8;
             guna2Button34.CustomizableEdges = customizableEdges21;
             guna2Button34.DisabledState.BorderColor = Color.DarkGray;
@@ -449,18 +457,19 @@
             guna2Button34.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button34.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button34.FillColor = Color.FromArgb(64, 64, 64);
-            guna2Button34.Font = new Font("Segoe UI Semibold", 24.75F, FontStyle.Bold);
+            guna2Button34.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button34.ForeColor = Color.White;
-            guna2Button34.Location = new Point(1365, 17);
+            guna2Button34.Location = new Point(825, 31);
             guna2Button34.Name = "guna2Button34";
             guna2Button34.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Button34.Size = new Size(381, 71);
+            guna2Button34.Size = new Size(225, 71);
             guna2Button34.TabIndex = 30;
             guna2Button34.Text = "Backspace";
             guna2Button34.Click += guna2Button34_Click;
             // 
             // guna2Button24
             // 
+            guna2Button24.Anchor = AnchorStyles.Bottom;
             guna2Button24.BorderRadius = 8;
             guna2Button24.CustomizableEdges = customizableEdges23;
             guna2Button24.DisabledState.BorderColor = Color.DarkGray;
@@ -468,18 +477,19 @@
             guna2Button24.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button24.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button24.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button24.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button24.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button24.ForeColor = Color.White;
-            guna2Button24.Location = new Point(1353, 190);
+            guna2Button24.Location = new Point(828, 185);
             guna2Button24.Name = "guna2Button24";
             guna2Button24.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2Button24.Size = new Size(113, 71);
+            guna2Button24.Size = new Size(74, 71);
             guna2Button24.TabIndex = 29;
             guna2Button24.Text = "/";
             guna2Button24.Click += Alphabet_C;
             // 
             // guna2Button25
             // 
+            guna2Button25.Anchor = AnchorStyles.Bottom;
             guna2Button25.BorderRadius = 8;
             guna2Button25.CustomizableEdges = customizableEdges25;
             guna2Button25.DisabledState.BorderColor = Color.DarkGray;
@@ -487,18 +497,19 @@
             guna2Button25.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button25.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button25.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button25.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button25.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button25.ForeColor = Color.White;
-            guna2Button25.Location = new Point(1225, 190);
+            guna2Button25.Location = new Point(748, 185);
             guna2Button25.Name = "guna2Button25";
             guna2Button25.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2Button25.Size = new Size(113, 71);
+            guna2Button25.Size = new Size(74, 71);
             guna2Button25.TabIndex = 28;
             guna2Button25.Text = ".";
             guna2Button25.Click += Alphabet_C;
             // 
             // guna2Button26
             // 
+            guna2Button26.Anchor = AnchorStyles.Bottom;
             guna2Button26.BorderRadius = 8;
             guna2Button26.CustomizableEdges = customizableEdges27;
             guna2Button26.DisabledState.BorderColor = Color.DarkGray;
@@ -506,18 +517,19 @@
             guna2Button26.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button26.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button26.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button26.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button26.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button26.ForeColor = Color.White;
-            guna2Button26.Location = new Point(1101, 190);
+            guna2Button26.Location = new Point(668, 185);
             guna2Button26.Name = "guna2Button26";
             guna2Button26.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2Button26.Size = new Size(113, 71);
+            guna2Button26.Size = new Size(74, 71);
             guna2Button26.TabIndex = 27;
             guna2Button26.Text = ",";
             guna2Button26.Click += Alphabet_C;
             // 
             // guna2Button27
             // 
+            guna2Button27.Anchor = AnchorStyles.Bottom;
             guna2Button27.BorderRadius = 8;
             guna2Button27.CustomizableEdges = customizableEdges29;
             guna2Button27.DisabledState.BorderColor = Color.DarkGray;
@@ -525,18 +537,19 @@
             guna2Button27.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button27.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button27.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button27.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button27.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button27.ForeColor = Color.White;
-            guna2Button27.Location = new Point(972, 190);
+            guna2Button27.Location = new Point(588, 185);
             guna2Button27.Name = "guna2Button27";
             guna2Button27.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2Button27.Size = new Size(113, 71);
+            guna2Button27.Size = new Size(74, 71);
             guna2Button27.TabIndex = 26;
             guna2Button27.Text = "M";
             guna2Button27.Click += Alphabet_C;
             // 
             // guna2Button28
             // 
+            guna2Button28.Anchor = AnchorStyles.Bottom;
             guna2Button28.BorderRadius = 8;
             guna2Button28.CustomizableEdges = customizableEdges31;
             guna2Button28.DisabledState.BorderColor = Color.DarkGray;
@@ -544,18 +557,19 @@
             guna2Button28.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button28.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button28.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button28.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button28.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button28.ForeColor = Color.White;
-            guna2Button28.Location = new Point(844, 190);
+            guna2Button28.Location = new Point(508, 185);
             guna2Button28.Name = "guna2Button28";
             guna2Button28.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Button28.Size = new Size(113, 71);
+            guna2Button28.Size = new Size(74, 71);
             guna2Button28.TabIndex = 25;
             guna2Button28.Text = "N";
             guna2Button28.Click += Alphabet_C;
             // 
             // guna2Button29
             // 
+            guna2Button29.Anchor = AnchorStyles.Bottom;
             guna2Button29.BorderRadius = 8;
             guna2Button29.CustomizableEdges = customizableEdges33;
             guna2Button29.DisabledState.BorderColor = Color.DarkGray;
@@ -563,18 +577,19 @@
             guna2Button29.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button29.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button29.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button29.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button29.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button29.ForeColor = Color.White;
-            guna2Button29.Location = new Point(716, 190);
+            guna2Button29.Location = new Point(428, 185);
             guna2Button29.Name = "guna2Button29";
             guna2Button29.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Button29.Size = new Size(113, 71);
+            guna2Button29.Size = new Size(74, 71);
             guna2Button29.TabIndex = 24;
             guna2Button29.Text = "B";
             guna2Button29.Click += Alphabet_C;
             // 
             // guna2Button30
             // 
+            guna2Button30.Anchor = AnchorStyles.Bottom;
             guna2Button30.BorderRadius = 8;
             guna2Button30.CustomizableEdges = customizableEdges35;
             guna2Button30.DisabledState.BorderColor = Color.DarkGray;
@@ -582,18 +597,19 @@
             guna2Button30.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button30.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button30.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button30.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button30.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button30.ForeColor = Color.White;
-            guna2Button30.Location = new Point(592, 190);
+            guna2Button30.Location = new Point(344, 185);
             guna2Button30.Name = "guna2Button30";
             guna2Button30.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            guna2Button30.Size = new Size(113, 71);
+            guna2Button30.Size = new Size(78, 71);
             guna2Button30.TabIndex = 23;
             guna2Button30.Text = "V";
             guna2Button30.Click += Alphabet_C;
             // 
             // guna2Button31
             // 
+            guna2Button31.Anchor = AnchorStyles.Bottom;
             guna2Button31.BorderRadius = 8;
             guna2Button31.CustomizableEdges = customizableEdges37;
             guna2Button31.DisabledState.BorderColor = Color.DarkGray;
@@ -601,18 +617,19 @@
             guna2Button31.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button31.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button31.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button31.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button31.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button31.ForeColor = Color.White;
-            guna2Button31.Location = new Point(463, 190);
+            guna2Button31.Location = new Point(264, 185);
             guna2Button31.Name = "guna2Button31";
             guna2Button31.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            guna2Button31.Size = new Size(113, 71);
+            guna2Button31.Size = new Size(74, 71);
             guna2Button31.TabIndex = 22;
             guna2Button31.Text = "C";
             guna2Button31.Click += Alphabet_C;
             // 
             // guna2Button32
             // 
+            guna2Button32.Anchor = AnchorStyles.Bottom;
             guna2Button32.BorderRadius = 8;
             guna2Button32.CustomizableEdges = customizableEdges39;
             guna2Button32.DisabledState.BorderColor = Color.DarkGray;
@@ -620,18 +637,19 @@
             guna2Button32.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button32.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button32.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button32.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button32.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button32.ForeColor = Color.White;
-            guna2Button32.Location = new Point(335, 190);
+            guna2Button32.Location = new Point(184, 185);
             guna2Button32.Name = "guna2Button32";
             guna2Button32.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            guna2Button32.Size = new Size(113, 71);
+            guna2Button32.Size = new Size(74, 71);
             guna2Button32.TabIndex = 21;
             guna2Button32.Text = "X";
             guna2Button32.Click += Alphabet_C;
             // 
             // guna2Button33
             // 
+            guna2Button33.Anchor = AnchorStyles.Bottom;
             guna2Button33.BorderRadius = 8;
             guna2Button33.CustomizableEdges = customizableEdges41;
             guna2Button33.DisabledState.BorderColor = Color.DarkGray;
@@ -639,18 +657,19 @@
             guna2Button33.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button33.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button33.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button33.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button33.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button33.ForeColor = Color.White;
-            guna2Button33.Location = new Point(207, 190);
+            guna2Button33.Location = new Point(104, 185);
             guna2Button33.Name = "guna2Button33";
             guna2Button33.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            guna2Button33.Size = new Size(113, 71);
+            guna2Button33.Size = new Size(74, 71);
             guna2Button33.TabIndex = 20;
             guna2Button33.Text = "Z";
             guna2Button33.Click += Alphabet_C;
             // 
             // guna2Button12
             // 
+            guna2Button12.Anchor = AnchorStyles.Bottom;
             guna2Button12.BorderRadius = 8;
             guna2Button12.CustomizableEdges = customizableEdges43;
             guna2Button12.DisabledState.BorderColor = Color.DarkGray;
@@ -658,18 +677,19 @@
             guna2Button12.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button12.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button12.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button12.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button12.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button12.ForeColor = Color.White;
-            guna2Button12.Location = new Point(1297, 104);
+            guna2Button12.Location = new Point(793, 108);
             guna2Button12.Name = "guna2Button12";
             guna2Button12.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            guna2Button12.Size = new Size(113, 71);
+            guna2Button12.Size = new Size(74, 71);
             guna2Button12.TabIndex = 19;
             guna2Button12.Text = "'";
             guna2Button12.Click += Alphabet_C;
             // 
             // guna2Button13
             // 
+            guna2Button13.Anchor = AnchorStyles.Bottom;
             guna2Button13.BorderRadius = 8;
             guna2Button13.CustomizableEdges = customizableEdges45;
             guna2Button13.DisabledState.BorderColor = Color.DarkGray;
@@ -677,18 +697,19 @@
             guna2Button13.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button13.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button13.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button13.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button13.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button13.ForeColor = Color.White;
-            guna2Button13.Location = new Point(1169, 104);
+            guna2Button13.Location = new Point(713, 108);
             guna2Button13.Name = "guna2Button13";
             guna2Button13.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            guna2Button13.Size = new Size(113, 71);
+            guna2Button13.Size = new Size(74, 71);
             guna2Button13.TabIndex = 18;
             guna2Button13.Text = "L";
             guna2Button13.Click += Alphabet_C;
             // 
             // guna2Button16
             // 
+            guna2Button16.Anchor = AnchorStyles.Bottom;
             guna2Button16.BorderRadius = 8;
             guna2Button16.CustomizableEdges = customizableEdges47;
             guna2Button16.DisabledState.BorderColor = Color.DarkGray;
@@ -696,18 +717,19 @@
             guna2Button16.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button16.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button16.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button16.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button16.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button16.ForeColor = Color.White;
-            guna2Button16.Location = new Point(1045, 104);
+            guna2Button16.Location = new Point(633, 108);
             guna2Button16.Name = "guna2Button16";
             guna2Button16.ShadowDecoration.CustomizableEdges = customizableEdges48;
-            guna2Button16.Size = new Size(113, 71);
+            guna2Button16.Size = new Size(74, 71);
             guna2Button16.TabIndex = 17;
             guna2Button16.Text = "K";
             guna2Button16.Click += Alphabet_C;
             // 
             // guna2Button17
             // 
+            guna2Button17.Anchor = AnchorStyles.Bottom;
             guna2Button17.BorderRadius = 8;
             guna2Button17.CustomizableEdges = customizableEdges49;
             guna2Button17.DisabledState.BorderColor = Color.DarkGray;
@@ -715,18 +737,19 @@
             guna2Button17.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button17.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button17.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button17.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button17.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button17.ForeColor = Color.White;
-            guna2Button17.Location = new Point(916, 104);
+            guna2Button17.Location = new Point(553, 108);
             guna2Button17.Name = "guna2Button17";
             guna2Button17.ShadowDecoration.CustomizableEdges = customizableEdges50;
-            guna2Button17.Size = new Size(113, 71);
+            guna2Button17.Size = new Size(74, 71);
             guna2Button17.TabIndex = 16;
             guna2Button17.Text = "J";
             guna2Button17.Click += Alphabet_C;
             // 
             // guna2Button18
             // 
+            guna2Button18.Anchor = AnchorStyles.Bottom;
             guna2Button18.BorderRadius = 8;
             guna2Button18.CustomizableEdges = customizableEdges51;
             guna2Button18.DisabledState.BorderColor = Color.DarkGray;
@@ -734,18 +757,19 @@
             guna2Button18.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button18.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button18.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button18.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button18.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button18.ForeColor = Color.White;
-            guna2Button18.Location = new Point(788, 104);
+            guna2Button18.Location = new Point(473, 108);
             guna2Button18.Name = "guna2Button18";
             guna2Button18.ShadowDecoration.CustomizableEdges = customizableEdges52;
-            guna2Button18.Size = new Size(113, 71);
+            guna2Button18.Size = new Size(74, 71);
             guna2Button18.TabIndex = 15;
             guna2Button18.Text = "H";
             guna2Button18.Click += Alphabet_C;
             // 
             // guna2Button19
             // 
+            guna2Button19.Anchor = AnchorStyles.Bottom;
             guna2Button19.BorderRadius = 8;
             guna2Button19.CustomizableEdges = customizableEdges53;
             guna2Button19.DisabledState.BorderColor = Color.DarkGray;
@@ -753,18 +777,19 @@
             guna2Button19.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button19.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button19.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button19.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button19.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button19.ForeColor = Color.White;
-            guna2Button19.Location = new Point(660, 104);
+            guna2Button19.Location = new Point(389, 108);
             guna2Button19.Name = "guna2Button19";
             guna2Button19.ShadowDecoration.CustomizableEdges = customizableEdges54;
-            guna2Button19.Size = new Size(113, 71);
+            guna2Button19.Size = new Size(78, 71);
             guna2Button19.TabIndex = 14;
             guna2Button19.Text = "G";
             guna2Button19.Click += Alphabet_C;
             // 
             // guna2Button20
             // 
+            guna2Button20.Anchor = AnchorStyles.Bottom;
             guna2Button20.BorderRadius = 8;
             guna2Button20.CustomizableEdges = customizableEdges55;
             guna2Button20.DisabledState.BorderColor = Color.DarkGray;
@@ -772,18 +797,19 @@
             guna2Button20.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button20.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button20.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button20.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button20.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button20.ForeColor = Color.White;
-            guna2Button20.Location = new Point(536, 104);
+            guna2Button20.Location = new Point(309, 108);
             guna2Button20.Name = "guna2Button20";
             guna2Button20.ShadowDecoration.CustomizableEdges = customizableEdges56;
-            guna2Button20.Size = new Size(113, 71);
+            guna2Button20.Size = new Size(74, 71);
             guna2Button20.TabIndex = 13;
             guna2Button20.Text = "F";
             guna2Button20.Click += Alphabet_C;
             // 
             // guna2Button21
             // 
+            guna2Button21.Anchor = AnchorStyles.Bottom;
             guna2Button21.BorderRadius = 8;
             guna2Button21.CustomizableEdges = customizableEdges57;
             guna2Button21.DisabledState.BorderColor = Color.DarkGray;
@@ -791,18 +817,19 @@
             guna2Button21.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button21.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button21.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button21.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button21.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button21.ForeColor = Color.White;
-            guna2Button21.Location = new Point(407, 104);
+            guna2Button21.Location = new Point(229, 108);
             guna2Button21.Name = "guna2Button21";
             guna2Button21.ShadowDecoration.CustomizableEdges = customizableEdges58;
-            guna2Button21.Size = new Size(113, 71);
+            guna2Button21.Size = new Size(74, 71);
             guna2Button21.TabIndex = 12;
             guna2Button21.Text = "D";
             guna2Button21.Click += Alphabet_C;
             // 
             // guna2Button22
             // 
+            guna2Button22.Anchor = AnchorStyles.Bottom;
             guna2Button22.BorderRadius = 8;
             guna2Button22.CustomizableEdges = customizableEdges59;
             guna2Button22.DisabledState.BorderColor = Color.DarkGray;
@@ -810,18 +837,19 @@
             guna2Button22.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button22.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button22.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button22.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button22.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button22.ForeColor = Color.White;
-            guna2Button22.Location = new Point(279, 104);
+            guna2Button22.Location = new Point(149, 108);
             guna2Button22.Name = "guna2Button22";
             guna2Button22.ShadowDecoration.CustomizableEdges = customizableEdges60;
-            guna2Button22.Size = new Size(113, 71);
+            guna2Button22.Size = new Size(74, 71);
             guna2Button22.TabIndex = 11;
             guna2Button22.Text = "S";
             guna2Button22.Click += Alphabet_C;
             // 
             // guna2Button23
             // 
+            guna2Button23.Anchor = AnchorStyles.Bottom;
             guna2Button23.BorderRadius = 8;
             guna2Button23.CustomizableEdges = customizableEdges61;
             guna2Button23.DisabledState.BorderColor = Color.DarkGray;
@@ -829,18 +857,19 @@
             guna2Button23.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button23.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button23.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button23.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button23.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button23.ForeColor = Color.White;
-            guna2Button23.Location = new Point(151, 104);
+            guna2Button23.Location = new Point(69, 108);
             guna2Button23.Name = "guna2Button23";
             guna2Button23.ShadowDecoration.CustomizableEdges = customizableEdges62;
-            guna2Button23.Size = new Size(113, 71);
+            guna2Button23.Size = new Size(74, 71);
             guna2Button23.TabIndex = 10;
             guna2Button23.Text = "A";
             guna2Button23.Click += Alphabet_C;
             // 
             // guna2Button14
             // 
+            guna2Button14.Anchor = AnchorStyles.Bottom;
             guna2Button14.BorderRadius = 8;
             guna2Button14.CustomizableEdges = customizableEdges63;
             guna2Button14.DisabledState.BorderColor = Color.DarkGray;
@@ -848,18 +877,19 @@
             guna2Button14.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button14.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button14.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button14.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button14.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button14.ForeColor = Color.White;
-            guna2Button14.Location = new Point(1246, 17);
+            guna2Button14.Location = new Point(744, 31);
             guna2Button14.Name = "guna2Button14";
             guna2Button14.ShadowDecoration.CustomizableEdges = customizableEdges64;
-            guna2Button14.Size = new Size(113, 71);
+            guna2Button14.Size = new Size(74, 71);
             guna2Button14.TabIndex = 9;
             guna2Button14.Text = "P";
             guna2Button14.Click += Alphabet_C;
             // 
             // guna2Button15
             // 
+            guna2Button15.Anchor = AnchorStyles.Bottom;
             guna2Button15.BorderRadius = 8;
             guna2Button15.CustomizableEdges = customizableEdges65;
             guna2Button15.DisabledState.BorderColor = Color.DarkGray;
@@ -867,18 +897,19 @@
             guna2Button15.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button15.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button15.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button15.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button15.ForeColor = Color.White;
-            guna2Button15.Location = new Point(1118, 17);
+            guna2Button15.Location = new Point(664, 31);
             guna2Button15.Name = "guna2Button15";
             guna2Button15.ShadowDecoration.CustomizableEdges = customizableEdges66;
-            guna2Button15.Size = new Size(113, 71);
+            guna2Button15.Size = new Size(74, 71);
             guna2Button15.TabIndex = 8;
             guna2Button15.Text = "O";
             guna2Button15.Click += Alphabet_C;
             // 
             // guna2Button8
             // 
+            guna2Button8.Anchor = AnchorStyles.Bottom;
             guna2Button8.BorderRadius = 8;
             guna2Button8.CustomizableEdges = customizableEdges67;
             guna2Button8.DisabledState.BorderColor = Color.DarkGray;
@@ -886,18 +917,19 @@
             guna2Button8.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button8.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button8.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button8.ForeColor = Color.White;
-            guna2Button8.Location = new Point(994, 17);
+            guna2Button8.Location = new Point(584, 31);
             guna2Button8.Name = "guna2Button8";
             guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges68;
-            guna2Button8.Size = new Size(113, 71);
+            guna2Button8.Size = new Size(74, 71);
             guna2Button8.TabIndex = 7;
             guna2Button8.Text = "I";
             guna2Button8.Click += Alphabet_C;
             // 
             // guna2Button9
             // 
+            guna2Button9.Anchor = AnchorStyles.Bottom;
             guna2Button9.BorderRadius = 8;
             guna2Button9.CustomizableEdges = customizableEdges69;
             guna2Button9.DisabledState.BorderColor = Color.DarkGray;
@@ -905,18 +937,19 @@
             guna2Button9.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button9.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button9.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button9.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button9.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button9.ForeColor = Color.White;
-            guna2Button9.Location = new Point(865, 17);
+            guna2Button9.Location = new Point(504, 31);
             guna2Button9.Name = "guna2Button9";
             guna2Button9.ShadowDecoration.CustomizableEdges = customizableEdges70;
-            guna2Button9.Size = new Size(113, 71);
+            guna2Button9.Size = new Size(74, 71);
             guna2Button9.TabIndex = 6;
             guna2Button9.Text = "U";
             guna2Button9.Click += Alphabet_C;
             // 
             // guna2Button10
             // 
+            guna2Button10.Anchor = AnchorStyles.Bottom;
             guna2Button10.BorderRadius = 8;
             guna2Button10.CustomizableEdges = customizableEdges71;
             guna2Button10.DisabledState.BorderColor = Color.DarkGray;
@@ -924,18 +957,19 @@
             guna2Button10.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button10.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button10.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button10.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button10.ForeColor = Color.White;
-            guna2Button10.Location = new Point(737, 17);
+            guna2Button10.Location = new Point(424, 31);
             guna2Button10.Name = "guna2Button10";
             guna2Button10.ShadowDecoration.CustomizableEdges = customizableEdges72;
-            guna2Button10.Size = new Size(113, 71);
+            guna2Button10.Size = new Size(74, 71);
             guna2Button10.TabIndex = 5;
             guna2Button10.Text = "Y";
             guna2Button10.Click += Alphabet_C;
             // 
             // guna2Button11
             // 
+            guna2Button11.Anchor = AnchorStyles.Bottom;
             guna2Button11.BorderRadius = 8;
             guna2Button11.CustomizableEdges = customizableEdges73;
             guna2Button11.DisabledState.BorderColor = Color.DarkGray;
@@ -943,18 +977,19 @@
             guna2Button11.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button11.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button11.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button11.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button11.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button11.ForeColor = Color.White;
-            guna2Button11.Location = new Point(609, 17);
+            guna2Button11.Location = new Point(344, 31);
             guna2Button11.Name = "guna2Button11";
             guna2Button11.ShadowDecoration.CustomizableEdges = customizableEdges74;
-            guna2Button11.Size = new Size(113, 71);
+            guna2Button11.Size = new Size(74, 71);
             guna2Button11.TabIndex = 4;
             guna2Button11.Text = "T";
             guna2Button11.Click += Alphabet_C;
             // 
             // guna2Button7
             // 
+            guna2Button7.Anchor = AnchorStyles.Bottom;
             guna2Button7.BorderRadius = 8;
             guna2Button7.CustomizableEdges = customizableEdges75;
             guna2Button7.DisabledState.BorderColor = Color.DarkGray;
@@ -962,18 +997,19 @@
             guna2Button7.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button7.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button7.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button7.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button7.ForeColor = Color.White;
-            guna2Button7.Location = new Point(485, 17);
+            guna2Button7.Location = new Point(264, 31);
             guna2Button7.Name = "guna2Button7";
             guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges76;
-            guna2Button7.Size = new Size(113, 71);
+            guna2Button7.Size = new Size(74, 71);
             guna2Button7.TabIndex = 3;
             guna2Button7.Text = "R";
             guna2Button7.Click += Alphabet_C;
             // 
             // guna2Button6
             // 
+            guna2Button6.Anchor = AnchorStyles.Bottom;
             guna2Button6.BorderRadius = 8;
             guna2Button6.CustomizableEdges = customizableEdges77;
             guna2Button6.DisabledState.BorderColor = Color.DarkGray;
@@ -981,18 +1017,19 @@
             guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button6.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button6.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(356, 17);
+            guna2Button6.Location = new Point(184, 31);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges78;
-            guna2Button6.Size = new Size(113, 71);
+            guna2Button6.Size = new Size(74, 71);
             guna2Button6.TabIndex = 2;
             guna2Button6.Text = "E";
             guna2Button6.Click += Alphabet_C;
             // 
             // guna2Button5
             // 
+            guna2Button5.Anchor = AnchorStyles.Bottom;
             guna2Button5.BorderRadius = 8;
             guna2Button5.CustomizableEdges = customizableEdges79;
             guna2Button5.DisabledState.BorderColor = Color.DarkGray;
@@ -1000,18 +1037,19 @@
             guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button5.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button5.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(228, 17);
+            guna2Button5.Location = new Point(104, 31);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges80;
-            guna2Button5.Size = new Size(113, 71);
+            guna2Button5.Size = new Size(74, 71);
             guna2Button5.TabIndex = 1;
             guna2Button5.Text = "W";
             guna2Button5.Click += Alphabet_C;
             // 
             // guna2Button4
             // 
+            guna2Button4.Anchor = AnchorStyles.Bottom;
             guna2Button4.BorderRadius = 8;
             guna2Button4.CustomizableEdges = customizableEdges81;
             guna2Button4.DisabledState.BorderColor = Color.DarkGray;
@@ -1019,12 +1057,12 @@
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button4.FillColor = Color.FromArgb(229, 9, 20);
-            guna2Button4.Font = new Font("Segoe UI Semibold", 30.75F, FontStyle.Bold);
+            guna2Button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(100, 17);
+            guna2Button4.Location = new Point(24, 31);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges82;
-            guna2Button4.Size = new Size(113, 71);
+            guna2Button4.Size = new Size(74, 71);
             guna2Button4.TabIndex = 0;
             guna2Button4.Text = "Q";
             guna2Button4.Click += Alphabet_C;
@@ -1043,13 +1081,13 @@
             txtSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSearch.Location = new Point(1248, 115);
+            txtSearch.Location = new Point(723, 34);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "";
             txtSearch.ReadOnly = true;
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges86;
-            txtSearch.Size = new Size(391, 48);
+            txtSearch.Size = new Size(284, 48);
             txtSearch.TabIndex = 23;
             txtSearch.Visible = false;
             txtSearch.TextChanged += txtSearch_TextChanged;
@@ -1058,11 +1096,11 @@
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 20F, FontStyle.Bold);
             guna2HtmlLabel3.ForeColor = SystemColors.ControlLightLight;
-            guna2HtmlLabel3.Location = new Point(31, 115);
+            guna2HtmlLabel3.Location = new Point(33, 16);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(111, 56);
+            guna2HtmlLabel3.Size = new Size(76, 39);
             guna2HtmlLabel3.TabIndex = 26;
             guna2HtmlLabel3.Text = "Genre";
             // 
@@ -1075,12 +1113,12 @@
             guna2Button38.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button38.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button38.FillColor = Color.FromArgb(150, 40, 60);
-            guna2Button38.Font = new Font("Segoe UI", 22F);
+            guna2Button38.Font = new Font("Segoe UI", 12F);
             guna2Button38.ForeColor = Color.White;
-            guna2Button38.Location = new Point(161, 115);
+            guna2Button38.Location = new Point(226, 15);
             guna2Button38.Name = "guna2Button38";
             guna2Button38.ShadowDecoration.CustomizableEdges = customizableEdges88;
-            guna2Button38.Size = new Size(180, 56);
+            guna2Button38.Size = new Size(100, 103);
             guna2Button38.TabIndex = 27;
             guna2Button38.Text = "Romance";
             // 
@@ -1093,12 +1131,12 @@
             guna2Button39.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button39.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button39.FillColor = Color.FromArgb(40, 80, 120);
-            guna2Button39.Font = new Font("Segoe UI", 22F);
+            guna2Button39.Font = new Font("Segoe UI", 12F);
             guna2Button39.ForeColor = Color.White;
-            guna2Button39.Location = new Point(347, 115);
+            guna2Button39.Location = new Point(115, 15);
             guna2Button39.Name = "guna2Button39";
             guna2Button39.ShadowDecoration.CustomizableEdges = customizableEdges90;
-            guna2Button39.Size = new Size(180, 56);
+            guna2Button39.Size = new Size(100, 103);
             guna2Button39.TabIndex = 28;
             guna2Button39.Text = "Action";
             // 
@@ -1111,12 +1149,12 @@
             guna2Button40.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button40.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button40.FillColor = Color.FromArgb(60, 20, 20);
-            guna2Button40.Font = new Font("Segoe UI", 22F);
+            guna2Button40.Font = new Font("Segoe UI", 12F);
             guna2Button40.ForeColor = Color.White;
-            guna2Button40.Location = new Point(533, 115);
+            guna2Button40.Location = new Point(544, 15);
             guna2Button40.Name = "guna2Button40";
             guna2Button40.ShadowDecoration.CustomizableEdges = customizableEdges92;
-            guna2Button40.Size = new Size(180, 56);
+            guna2Button40.Size = new Size(100, 106);
             guna2Button40.TabIndex = 29;
             guna2Button40.Text = "Horror";
             // 
@@ -1129,12 +1167,12 @@
             guna2Button41.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button41.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button41.FillColor = Color.FromArgb(40, 100, 80);
-            guna2Button41.Font = new Font("Segoe UI", 22F);
+            guna2Button41.Font = new Font("Segoe UI", 12F);
             guna2Button41.ForeColor = Color.White;
-            guna2Button41.Location = new Point(721, 115);
+            guna2Button41.Location = new Point(332, 16);
             guna2Button41.Name = "guna2Button41";
             guna2Button41.ShadowDecoration.CustomizableEdges = customizableEdges94;
-            guna2Button41.Size = new Size(180, 56);
+            guna2Button41.Size = new Size(100, 103);
             guna2Button41.TabIndex = 30;
             guna2Button41.Text = "Sci-Fi";
             // 
@@ -1147,12 +1185,12 @@
             guna2Button42.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button42.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button42.FillColor = Color.FromArgb(80, 60, 120);
-            guna2Button42.Font = new Font("Segoe UI", 22F);
+            guna2Button42.Font = new Font("Segoe UI", 12F);
             guna2Button42.ForeColor = Color.White;
-            guna2Button42.Location = new Point(907, 115);
+            guna2Button42.Location = new Point(438, 16);
             guna2Button42.Name = "guna2Button42";
             guna2Button42.ShadowDecoration.CustomizableEdges = customizableEdges96;
-            guna2Button42.Size = new Size(180, 56);
+            guna2Button42.Size = new Size(100, 105);
             guna2Button42.TabIndex = 31;
             guna2Button42.Text = "Thriller";
             // 
@@ -1167,46 +1205,55 @@
             Search.FillColor = Color.Gray;
             Search.Font = new Font("Segoe UI", 27F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Search.ForeColor = Color.White;
-            Search.Location = new Point(1642, 115);
+            Search.Location = new Point(1013, 34);
             Search.Name = "Search";
             Search.ShadowDecoration.CustomizableEdges = customizableEdges98;
-            Search.Size = new Size(104, 48);
+            Search.Size = new Size(76, 48);
             Search.TabIndex = 32;
             Search.Text = "⌕";
             Search.Click += Search_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(guna2Button42);
+            panel1.Controls.Add(guna2Button41);
+            panel1.Controls.Add(guna2Button40);
+            panel1.Controls.Add(guna2Button38);
+            panel1.Controls.Add(guna2Button39);
+            panel1.Controls.Add(Search);
+            panel1.Controls.Add(txtSearch);
+            panel1.Controls.Add(guna2HtmlLabel3);
+            panel1.Location = new Point(-23, 99);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1818, 121);
+            panel1.TabIndex = 33;
             // 
             // F2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
-            ClientSize = new Size(1918, 1030);
-            Controls.Add(Search);
+            ClientSize = new Size(1078, 1100);
             Controls.Add(Keyboard);
-            Controls.Add(guna2Button42);
-            Controls.Add(guna2Button41);
-            Controls.Add(guna2Button40);
-            Controls.Add(guna2Button39);
-            Controls.Add(guna2Button38);
-            Controls.Add(guna2HtmlLabel3);
-            Controls.Add(txtSearch);
+            Controls.Add(panel1);
             Controls.Add(Mcon);
             Controls.Add(guna2Panel7);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
-            MaximumSize = new Size(1920, 1080);
-            MinimumSize = new Size(1918, 1030);
+            MinimumSize = new Size(1078, 1030);
             Name = "F2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "F2";
+            TopMost = true;
             WindowState = FormWindowState.Maximized;
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             guna2Panel7.ResumeLayout(false);
             Keyboard.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -1264,5 +1311,6 @@
         private Guna.UI2.WinForms.Guna2Button Search;
         private Guna.UI2.WinForms.Guna2Button btnEnter;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Panel panel1;
     }
 }

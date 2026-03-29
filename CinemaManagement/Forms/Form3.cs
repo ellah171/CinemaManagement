@@ -14,8 +14,8 @@ namespace CinemaManagement.Forms
     {
         private string selectedMoviePath;
         private string selectedVideoPath;
-        private string selectedTime = ""; 
-        private bool isTimeSelected = false; 
+        private string selectedTime = "";
+        private bool isTimeSelected = false;
 
         public Form3(string imagePath = "", string videoPath = "")
         {
@@ -23,7 +23,7 @@ namespace CinemaManagement.Forms
             this.selectedMoviePath = imagePath;
             this.selectedVideoPath = videoPath;
 
-            
+
             guna2Button1.Click += Showtime_Click;
             guna2Button2.Click += Showtime_Click;
             guna2Button3.Click += Showtime_Click;
@@ -48,25 +48,25 @@ namespace CinemaManagement.Forms
             toolTipTrailer.SetToolTip(btnPlay, "Preview Trailer");
         }
 
-   
+
         private void Showtime_Click(object sender, EventArgs e)
         {
             Guna2Button clicked = (Guna2Button)sender;
 
-           
+
             guna2Button1.FillColor = Color.FromArgb(30, 30, 30);
             guna2Button2.FillColor = Color.FromArgb(30, 30, 30);
             guna2Button3.FillColor = Color.FromArgb(30, 30, 30);
             guna2Button4.FillColor = Color.FromArgb(30, 30, 30);
 
-           
+
             clicked.FillColor = Color.FromArgb(229, 9, 20);
 
             selectedTime = clicked.Text;
             isTimeSelected = true;
         }
 
-      
+
         private void guna2Button6_Click(object sender, EventArgs e)
         {
             if (isTimeSelected)
@@ -77,7 +77,7 @@ namespace CinemaManagement.Forms
             }
             else
             {
-               
+
                 MessageBox.Show("Please select a showtime before proceeding.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -89,7 +89,7 @@ namespace CinemaManagement.Forms
             this.Hide();
         }
 
-        
+
         private void btnPlay_Click_1(object sender, EventArgs e)
         {
             guna2Panel8.Visible = true;
@@ -120,6 +120,11 @@ namespace CinemaManagement.Forms
         private void guna2PictureBox3_Click(object sender, EventArgs e) { }
         private void guna2PictureBox2_Click(object sender, EventArgs e) { }
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

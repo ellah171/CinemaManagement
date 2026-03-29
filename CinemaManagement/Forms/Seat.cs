@@ -77,7 +77,7 @@ namespace CinemaManagement.Forms
                 return;
             }
 
-            Addons addons = new Addons();
+            Add addons = new Add();
             addons.Show();
             this.Hide();
         }
